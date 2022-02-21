@@ -1,6 +1,6 @@
 
 .main {
-  min-height: 80vh;
+  min-height: 70vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -28,10 +28,12 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  /* font-family: "Nordic"; */
-  font-size: 4rem;
+  font-family: "Viking";
+  font-size: 5rem;
+  color: white;
+  letter-spacing: 2px;
   text-align: center;
-  text-shadow: 1px 1px  rgb(122, 118, 118);
+  text-shadow: 1px 2px  rgba(158, 155, 155, 0.842);
 }
 
 .title,
@@ -40,7 +42,7 @@
 }
 
 .description {
-  margin: 2rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
   font-family: "Nordic"; 
   letter-spacing: 2px;

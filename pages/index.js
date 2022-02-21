@@ -16,9 +16,9 @@ export default function Home() {
       <Header/>
       <div className={styles.container}>
         <main className={styles.main}>
-          {/* <h1 className={styles.title}>
-            Ragnarök Beers
-          </h1> */}
+          <h1 className={styles.title}>
+            Ragnarök
+          </h1>
           <Image
             src="/ragna.png" 
             alt="Ragnarok Beers"
