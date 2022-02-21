@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Countdown from 'react-countdown'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 import styles from '../styles/Home.module.css'
@@ -15,20 +16,30 @@ export default function Home() {
       <Header/>
       <div className={styles.container}>
         <main className={styles.main}>
-          <h1 className={styles.title}>
+          {/* <h1 className={styles.title}>
             Ragnarök Beers
-          </h1>
+          </h1> */}
           <Image
             src="/ragna.png" 
             alt="Ragnarok Beers"
-            width={200}
-            height={200}
+            className={styles.imgShadow}
+            width={500}
+            height={500}
           />
           <p className={styles.description}>
-            Is a place where you can find the best beers in the world.
+            Is a place where you can find the best beers in the world. 
+            <br></br>
+            <Countdown
+              className={styles.description}
+              date={Date.now() + 1000000} 
+            />
           </p>
           <div className={styles.grid}>
+          <audio src="/sounds/ragna.mp3" autoPlay></audio>
           </div>
+          {/* <Button>
+            Let&apos;s go!
+          </Button> */}
         </main>
       </div>
       <Footer/>

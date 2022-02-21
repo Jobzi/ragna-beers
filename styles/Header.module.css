@@ -12,7 +12,7 @@ right: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: linear-gradient(#dc2fff, #c226ff);
+background-image: linear-gradient(#57013A, #3a0027);
 transform: skewY(-6deg);
 transform-origin: top left;
 }
@@ -31,7 +31,7 @@ right: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: linear-gradient(#dc2fff, #c226ff);
+background-image: linear-gradient(#3a0027, #57013A);
 transform: skewY(-6deg);
 transform-origin: top right;
 }

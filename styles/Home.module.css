@@ -28,7 +28,10 @@
 .title {
   margin: 0;
   line-height: 1.15;
+  /* font-family: "Nordic"; */
   font-size: 4rem;
+  text-align: center;
+  text-shadow: 1px 1px  rgb(122, 118, 118);
 }
 
 .title,
@@ -39,7 +42,15 @@
 .description {
   margin: 2rem 0;
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-family: "Nordic"; 
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px  rgba(158, 155, 155, 0.842);
+  color: white;
+  /* background: -webkit-linear-gradient(#4158D0, #C850C0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 
 .grid {
@@ -90,4 +101,10 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.imgShadow {
+  width: 150px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 10px 10px rgb(48, 46, 46));
 }
