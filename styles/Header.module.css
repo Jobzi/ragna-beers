@@ -1,6 +1,6 @@
 .header {
 position: relative;
-height: 80px;
+height: 70px;
 overflow: hidden;
 }
 
@@ -19,7 +19,7 @@ transform-origin: top left;
 
 .footer {
 position: relative;
-height: 80px;
+height: 70px;
 overflow: hidden;
 }
   

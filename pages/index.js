@@ -1,11 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useState } from 'react'
 import Countdown from 'react-countdown'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [countdown, _] = useState(()=>{
+    const date = new Date()
+    date.setHours(23,59,0,0)
+    date.setDate(date.getDate())
+    console.log(date)
+    console.log(Date())
+    return date.getTime() - Date.now()
+    
+  })
   return (
     <>
       <Head>
@@ -23,19 +33,18 @@ export default function Home() {
             src="/ragna.png" 
             alt="Ragnarok Beers"
             className={styles.imgShadow}
-            width={500}
-            height={500}
+            width={450}
+            height={450}
           />
           <p className={styles.description}>
             Is a place where you can find the best beers in the world. 
             <br></br>
             <Countdown
-              className={styles.description}
-              date={Date.now() + 1000000} 
+              className={styles.title}
+              date={Date.now() + countdown} 
             />
           </p>
           <div className={styles.grid}>
-          <audio src="/sounds/ragna.mp3" autoPlay></audio>
           </div>
           {/* <Button>
             Let&apos;s go!
