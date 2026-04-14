@@ -1,0 +1,27 @@
+.lightning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.flashOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(190, 120, 255, 0.85) 0%,
+    rgba(100, 140, 255, 0.55) 40%,
+    rgba(200, 210, 255, 0.2) 70%,
+    transparent 100%
+  );
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+}

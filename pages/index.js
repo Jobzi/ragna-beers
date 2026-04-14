@@ -5,6 +5,7 @@ import Countdown from 'react-countdown'
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 import { AgeVerification } from '../components/AgeVerification'
+import { ThunderStorm } from '../components/ThunderStorm'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
   })
   return (
     <>
+      <ThunderStorm />
       <AgeVerification onVerified={() => setIsAgeVerified(true)} />
       <Head>
         <title>Ragnarök Beers</title>
